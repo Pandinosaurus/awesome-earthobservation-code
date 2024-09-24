@@ -6,7 +6,7 @@ A curated list of awesome tools, tutorials, code, helpful projects, links, stuff
   <img width="300" height="300" src="https://geogerservices.files.wordpress.com/2018/06/scenefromabovepodcast.jpg?w=300&h=300">
 </p>
 
-The #scenefromabove podcast aimed to be a mix of news, opinion, discussion and interviews. I am no longer involved in the podcast, however it is still going<br>
+The [#scenefromabove podcast](https://scenefromabove.podbean.com/) aimed to be a mix of news, opinion, discussion and interviews. I am no longer involved in the podcast, however it is still going<br>
 
 ## Latest news
 
@@ -14,7 +14,7 @@ I have written a blog post about how this repo came into being. It includes a vi
 
 Please note that this is <b>not</b> offically an awesome list.
 
-<b> Update October / November 2022</b> All dead links have been purged! If you find a resource missing let me know and I will add, I accept PR's and you get a mention in the contributors file.
+<b> Update March 2024</b> Added a load of STAC links and some opendatacube ones. I accept PR's and you get a mention in the contributors file.
 
 <b> A note of caution </b> During the QC of links I note that the vast majority are 18 + months old or considerbly older. Some repos are retired and still visible, some code is > 10 years old. Tread carefully.
 
@@ -47,11 +47,20 @@ If you are not familiar with Earth Observation then these links may help set con
 - [Earth Observation Text books](https://www.eoa.org.au/earth-observation-textbooks) - Earth Observation: Data, Processing and Applications is an Australian Earth Observation (EO) community undertaking to describe EO data, processing and applications in an Australian context and includes a wide range of local case studies to demonstrate Australia’s increasing usage of EO data.
 - [ESA newcomers guide](https://business.esa.int/newcomers-earth-observation-guide) - The aim of this guide is to help non-experts in providing a starting point in the decision process for selecting an appropriate Earth Observation (EO) solution.
 - [The state of satellites](https://landscape.satsummit.io/) - The satellite systems we use to capture, analyze, and distribute data about the Earth are improving every day, creating bold new opportunities for impact in global development.
+- [Landsats Enduring Legacy](https://my.asprs.org/landsat) - pdf download over 600 pages of remote sensing!
 
 You may also wish to navigate a search of the terms `satellite-imagery` and `earth-observation` to get the latest list of topics that have these terms in their headers
 
 - [satellite-imagery](https://github.com/topics/satellite-imagery)
 - [earth-observation](https://github.com/topics/earth-observation)
+
+Two excellent videos (approx 20mins) about `Earth observation` 
+
+[I Couldn't Find a Video Explaining Satellite Images, So I Made One](https://www.youtube.com/watch?v=xy5qR0cBFGs)
+
+[How Radar Satellites See through Clouds (Synthetic Aperture Radar Explained)](https://www.youtube.com/watch?v=zMsCyEAOrh0)
+
+Not sure the best place for data catalogs is but this is a good start if that interests you [Data Catalogs](https://github.com/opengeos/geospatial-data-catalogs)
 
 ## Open EO
 
@@ -87,7 +96,6 @@ This section full of great code and projects related to processing optical satel
 - [sentinelsat](https://github.com/sentinelsat/sentinelsat) - Search and download Copernicus Sentinel satellite images [sentinelsat docs](https://sentinelsat.readthedocs.io/en/stable/) `Python`
 - [LANDSAT-Download](https://github.com/olivierhagolle/LANDSAT-Download) - Automated download of LANDSAT data from USGS website
 - [Landsat-Util](https://github.com/developmentseed/landsat-util) - A utility to search, download and process Landsat 8 satellite imagery `Python`
-- [Sentinel-1_POE_orbit_download](https://github.com/insarwxw/Sentinel-1_POE_orbit_download) - Automatically download Sentinel-1 POE orbit data with a given product list. `Python`
 - [data-prep-scripts](https://lpdaac.usgs.gov/tools/data-prep-scripts/) - This collection of `R` and `Python` scripts can be used to download data and perform basic data processing functions such as georeferencing, reprojecting, converting, and reformatting data. All scripts are available for download from the LP DAAC User Resources [BitBucket Code Repository](https://git.earthdata.nasa.gov/projects/LPDUR).
 - [Stream NASA data directly into Python objects](https://nbviewer.jupyter.org/gist/scottyhq/a1ddbb12f97764860160370229b19261) - Skip the download! Stream NASA data directly into Python objects from [blog post](https://medium.com/pangeo/intake-stac-nasa-4cd78d6246b7)
 - [sat-extractor](https://github.com/FrontierDevelopmentLab/sat-extractor) - Extract Satellite Imagery from public constellations at scale `Python`
@@ -158,6 +166,9 @@ This section full of great code and projects related to processing optical satel
 - [GeoLambda](https://github.com/developmentseed/geolambda) - Create and deploy Geospatial AWS Lambda functions `Python`
 - [rio-viz](https://github.com/developmentseed/rio-viz) - Visualize Cloud Optimized GeoTIFF in browser `html` `Python`
 - [Sentinel-s3](https://github.com/developmentseed/sentinel-s3) - `Python` libraries for extracting Sentinel-2's metadata from Amazon S3
+- [geocore](https://github.com/Canadian-Geospatial-Platform/geocore) - GeoCore is an Open Source Cloud Native (AWS) Geospatial Catalog | GeoCore est un catalogue géospatial Open Source Cloud Native (AWS) 
+- [cng-workshop](https://github.com/Element84/cng-workshop) - Intro to cloud-native geospatial workshop
+- [cloud-native-geospatial](https://github.com/ua-datalab/cloud-native-geospatial) - resource [introduction to cloud native geospatial](https://ua-datalab.github.io/cloud-native-geospatial/)
 
 #### STAC
 - [stac-utils](https://github.com/stac-utils) - Tools for working with SpatioTemporal Asset Catalogs (STAC) (perhaps worth going here first for STAC) `Python` `Javascript`
@@ -166,12 +177,36 @@ This section full of great code and projects related to processing optical satel
     - [pystac-client](https://github.com/stac-utils/pystac-client) - `Python` client for STAC Catalogs and APIs
   - [pgstac](https://github.com/stac-utils/pgstac) - Schema, functions and a `Python` library for storing and accessing STAC collections and items in `PostgreSQL` 
   - [stac-fastapi](https://github.com/stac-utils/stac-fastapi) - STAC API implementation with FastAPI. `Python`
+  - [stac-fastapi-pgstac](https://github.com/stac-utils/stac-fastapi-pgstac) - PostgreSQL backend for stac-fastapi using pgstac
   - [STAC Spec](https://github.com/radiantearth/stac-spec) - SpatioTemporal Asset Catalog specification - making geospatial assets openly searchable and crawlable
-  - [stac-validator](https://github.com/sparkgeo/stac-validator) - Validator for the stac-spec `Python`
+  - [stac-validator](https://github.com/stac-utils/stac-validator) - Validator for the stac-spec `Python`
   - [stackstac](https://github.com/gjoseph92/stackstac) - Turn a list of STAC items into a 4D xarray DataArray `Python`
   - [stac-nb](https://github.com/darrenwiens/stac-nb) - STAC in Jupyter Notebooks `Python`
   - [qgis-stac-plugin](https://github.com/stac-utils/qgis-stac-plugin) - QGIS plugin for reading STAC APIs `Python`
-  - [easystac](https://github.com/cloudsen12/easystac) - A `Python` package for simple STAC queries 
+  - [easystac](https://github.com/cloudsen12/easystac) - A `Python` package for simple STAC queries
+  - [stac-utils](https://github.com/stac-utils/stac-task) - Provides a class interface for running custom algorithms on STAC ItemCollections `Python`
+  - [pgstac](https://github.com/stac-utils/pgstac) - Schema, functions and a python library for storing and accessing STAC collections and items in PostgreSQL
+  - [pystac-client](https://github.com/stac-utils/pystac-client) - `Python` client for searching STAC APIs
+  - [stac-asset](https://github.com/stac-utils/stac-asset) - Read and download STAC Assets, using a variety of authentication schemes
+  - [stac-server](https://github.com/stac-utils/stac-server) - A Node-based STAC API, AWS Serverless, OpenSearch `Javascript`
+  - [elastic search](https://github.com/stac-utils/stac-fastapi-elasticsearch-opensearch) - Elasticsearch backend for stac-fastapi with Opensearch support. `Python`
+  - [stac4s](https://github.com/stac-utils/stac4s) - A `Scala` library with primitives to build applications using the SpatioTemporal Asset Catalogs specification
+  - [stac-rs](https://github.com/stac-utils/stac-rs) - `Rust` implementation of the SpatioTemporal Asset Catalog (STAC) specification
+  - [stac-table](https://github.com/stac-utils/stac-table)
+  - [stac-fields](https://github.com/stac-utils/stac-fields) - A minimal STAC library that contains a list of STAC fields with some metadata and helper functions for styling as HTML. `Javascript`
+  - [titiler-pgstac](https://github.com/stac-utils/titiler-pgstac) - TiTiler + PgSTAC
+  - [stac-api-validator](https://github.com/stac-utils/stac-api-validator) - A STAC API validation client `Python`
+  - [xpystac](https://github.com/stac-utils/xpystac) - For extending xarray.open_dataset to accept pystac objects `Python`
+  - [stac-pydantic](https://github.com/stac-utils/stac-pydantic) - Pydantic data models for the STAC spec `Python`
+  - [stac-migrate](https://github.com/stac-utils/stac-migrate) - A tool to migrate Items, Catalogs and Collections from old versions to the most recent one. `Javascript`
+  - [stac-node-validator](https://github.com/stac-utils/stac-node-validator) - Simple validator for STAC Items, Catalogs, and Collections. STAC 1.0.0 compliant! `Javascript`
+  - [stac-geoparquet](https://github.com/stac-utils/stac-geoparquet) - Convert STAC items to geoparquet. `Python`
+  - [stac-index](https://github.com/stac-utils/stac-index) - A service that lists all available and registered STAC catalogs and APIs.
+  - [stac-check](https://github.com/stac-utils/stac-check) - Linting and validation tool for STAC assets
+  - [stac-terminal](https://github.com/stac-utils/stac-terminal) - Output info on STAC Items in the terminal
+  - [stac-layer](https://github.com/stac-utils/stac-layer) - Visualize a STAC Item or Collection on a Leaflet Map
+  - [pgstac-rs](https://github.com/stac-utils/pgstac-rs) - `Rust` interface to pgstac
+  - [stac-rs](https://github.com/stac-utils/stac-rs) - Tools and libraries for the SpatioTemporal Asset Catalog (STAC) specification, written in `Rust`
 
 #### COG
 - [COG Validator](https://github.com/rouault/cog_validator) - Cloud Optimized GeoTIFF validation service
@@ -196,6 +231,7 @@ This section full of great code and projects related to processing optical satel
 - [ap-latem](https://github.com/dymaxionlabs/ap-latam) - Detection of slums and informal settlements from satellite imagery `Python`
 - [local_structire_wpb-severity](https://github.com/mikoontz/local-structure-wpb-severity) - Analysis of drone imagery to characterize forest structure and severity of a tree killing insect `Python`
 - [Truck_Detection_Sentinel2_COVID19](https://github.com/hfisser/Truck_Detection_Sentinel2_COVID19) - This repository is designated to detecting trucks using Sentinel-2 data. `Python`
+- [Artificial Intelligence for Geospatial Analysis with Pytorch’s TorchGeo (multi parts)](https://towardsdatascience.com/artificial-intelligence-for-geospatial-analysis-with-pytorchs-torchgeo-part-1-52d17e409f09) - An end-to-end deep learning geospatial segmentation project using Pytorch and TorchGeo packages - [code](https://gist.github.com/cordmaur/d050973aa3ed980023e9239183a2cb66#file-earthsurfacewater_medium_2-ipynb)
 
 ### Company specific examples
 
@@ -282,6 +318,7 @@ Books! [Geospatial R Books](https://www.bigbookofr.com/geospatial.html) - some `
 - [What_are_data_cubes](https://edzer.github.io/UseR2020/#What_are_data_cubes) - Analyzing and visualising spatial and spatiotemporal data cubes - Part I
 - [classifying_satellite_imagery_in_R](https://urbanspatial.github.io/classifying_satellite_imagery_in_R/) - For this tutorial, we use Landsat 8 imagery from Calgary
 - [planetR](https://github.com/bevingtona/planetR) - `R` tools to search, activate and download satellite imagery from the Planet API. 
+- [Landsat_land_surface_temperature](https://github.com/alyssakullberg/Landsat_land_surface_temperature) - `R` Estimate land surface temperature using Landsat satellite imagery. 
 
 ## Languages other than `Python` and `R`
 
@@ -319,6 +356,7 @@ Books! [Geospatial R Books](https://www.bigbookofr.com/geospatial.html) - some `
 - [Fmask](https://github.com/GERSL/Fmask) - The software called Fmask (Function of mask) is used for automated clouds, cloud shadows, and snow masking for Landsats 4-8 and Sentinel 2 images. `Matlab`
 - [resto](https://github.com/jjrom/resto) - A metadata catalog and search engine for geospatialized data `PHP` Stac!
 - [pktools](http://pktools.nongnu.org/html/index.html) - pktools is a suite of utilities written in `C++` for image processing with a focus on remote sensing applications. It relies on the Geospatial Data Abstraction Library ([GDAL](http://www.gdal.org)) and OGR.
+- [iris](https://github.com/ESA-PhiLab/iris) - Semi-automatic tool for manual segmentation of multi-spectral and geo-spatial imagery. `Javascript`
 
 ## Training and learning
 
@@ -341,6 +379,7 @@ Books! [Geospatial R Books](https://www.bigbookofr.com/geospatial.html) - some `
 
 ## Deep learning and Machine Learning
 - [future learn course - artificial intelligence for earth monitoring](https://www.futurelearn.com/courses/artificial-intelligence-for-earth-monitoring)
+- [Segment-geospatial](https://github.com/opengeos/segment-geospatial) - A `Python` package for segmenting geospatial data with the Segment Anything Model (SAM). [docs](https://samgeo.gishub.org/) 
 
 #### Curated lists
 
@@ -438,12 +477,17 @@ Best to start here [Awesome_GEE](https://github.com/giswqs/Awesome-GEE) - A cura
 
 - [Opendatacube](https://github.com/opendatacube)
   - [Datacube Core](https://github.com/opendatacube/datacube-core) - Open Data Cube analyses continental scale Earth Observation data through time `Python` `xarray`
-  - [Datacube Explorer](https://github.com/opendatacube/datacube-core) - A web frontend for viewing the Open Data Cube index, including searching for scenes and downloading individual files `Python`
   - [Datacube OWS](https://github.com/opendatacube/datacube-ows) - Open web services for the Open Data Cube. Supports WMS, WMTS and WCS for any dataset indexed into the ODC `Python`
 - [ODC STAC](https://github.com/opendatacube/odc-stac) - A stand-alone Python library that allows the loading of STAC Items into an ODC-compatible Xarray `xarray` `Python`
 - [data_cube_notebooks](https://github.com/ceos-seo/data_cube_notebooks) - Jupyter Notebook examples for our Data Cube capable algorithms and functions `Python`
 - [Digital Earth Australia Notebooks](https://github.com/GeoscienceAustralia/dea-notebooks) - Repository for Jupyter Notebooks, tools and workflows for continental-scale earth observation/geospatial analysis with Open Data Cube and `xarray` `Python`
 - [Digital Earth Africa Sandbox Notebooks](https://github.com/digitalearthafrica/deafrica-sandbox-notebooks) - Extra documentation about using ODC with Jupyter Notebooks with DE Africa-specific examples `xarray` `Python`
+- [odc-tools](https://github.com/opendatacube/odc-tools) - ODC features that DEA is experimenting with or prototyping with the intention of being integrated into odc-core in the future
+- [datacube-explorer](https://github.com/opendatacube/datacube-explorer) - Web-based exploration of Open Data Cube collections
+- [openeo_odc_driver](https://github.com/SARScripts/openeo_odc_driver) - OpenEO processing engine written in `Python` based on OpenDataCube, `Xarray` and `Dask`.
+- [geocube](https://github.com/corteva/geocube) - Tool to convert geopandas vector data into rasterized xarray data `Python`
+- [odc-sh](https://github.com/sentinel-hub/odc-sh) - Sentinel Hub plugin for Open data cube
+- [dea-coastlines](https://github.com/GeoscienceAustralia/dea-coastlines) - Extracting tidally-constrained annual shorelines and robust rates of coastal change from freely available Earth observation data at continental scale 
 
 ## Other Datacube-related Python
 
@@ -452,14 +496,18 @@ Best to start here [Awesome_GEE](https://github.com/giswqs/Awesome-GEE) - A cura
 
 ## Planetary Computer
 
-** new and under dev **
-- [Sentinel2 on planetary computer](https://github.com/Element84/geo-notebooks/blob/main/notebooks/odc-planetary-computer.ipynb) - notebook explores Sentinel-2 data on Microsoft's Planetary Computer `Python`
-- [mircosoft](https://github.com/microsoft) - Microsoft git repo
+
+- [Mircosoft PlanetaryComputer](https://github.com/microsoft/PlanetaryComputer) - Issues, discussions, and information about the Microsoft Planetary Computer 
   - [reading-stac](https://planetarycomputer.microsoft.com/docs/quickstarts/reading-stac/) - Reading Data from the STAC API
   - [PlanetaryComputerExamples](https://github.com/microsoft/PlanetaryComputerExamples) - Examples of using the Planetary Computer `Python`
   - [sdk-python](https://github.com/microsoft/planetary-computer-sdk-for-python) - Planetary Computer SDK for `Python`
+  - [planetary-computer-apis](https://github.com/microsoft/planetary-computer-apis)
+  - [PlanetaryComputerDataCatalog](https://github.com/microsoft/PlanetaryComputerDataCatalog) - Data catalog for the Microsoft Planetary Computer [website](https://planetarycomputer.microsoft.com/)
 - [planetary-computer-deep-dives](https://github.com/TomAugspurger/planetary-computer-deep-dives) - `Python`
-- [pearl-backend](https://github.com/developmentseed/pearl-backend) - PEARL (Planetary Computer Land Cover Mapping) Platform API and Infrastructure `Python`
+- [Sentinel2 on planetary computer](https://github.com/Element84/geo-notebooks/blob/main/notebooks/odc-planetary-computer.ipynb) - notebook explores Sentinel-2 data on Microsoft's Planetary Computer `Python`
+- [satio-pc](https://github.com/dzanaga/satio-pc) - Compute Sentinel features on Planetary Computer `Python`
+- [gmv planetary computer S2 alerts](https://github.com/globalmangrovewatch/gmw_planetary_computer_s2_alerts) - Repo with the code producing the GMW alerts using the Microsoft Planetary Computer `Python`
+- [hottest panchayats kerala](https://github.com/shijithpk/hottest-panchayats-kerala) - Figuring out what the hottest villages in Kerala are with the help of Microsoft's Planetary Computer. `Python` 
 
 ## QGIS and Grass
 
@@ -547,6 +595,7 @@ Such a vast collection of resources that it warrants a sub section within Climat
 - [sprnca_gedi](https://github.com/rbavery/sprnca_gedi) - WIP to map Foliage Height Diversity along the San Pedro Riparian Corridor with NASA's GEDI Lidar `Python`
 - [GEDI_Yucatan](https://github.com/JohMast/GEDI_Yucatan) - Supplementary material for the study: Space Lidar for Archaeology? Reanalyzing GEDI Data for Detection of Ancient Maya Buildings `R`
 - [q_research](https://github.com/HeatherKmtb/q_research) - For processing of ICESat GLAS, GEDI and ICESat-2 LiDAR data, to derive q parameter for canopy height to density relationship `Python`
+- [gedi-tutorials](https://github.com/ornldaac/gedi_tutorials) - GEDI L3 and L4 Tutorials 
 
 ## InSAR
 
@@ -608,7 +657,7 @@ Such a vast collection of resources that it warrants a sub section within Climat
 
 Please do explore these accounts, there are some absolutely brilliant projects on these accounts. This was previously a section containing examples, but these are better grouped into the other headings and repitition of links removed. However I feel its very important to highlight individuals wherever possible, ordered by github account name.
 
-| [Chis Holden github](https://github.com/ceholden) | [Christoph Rieke git hub](https://github.com/chrieke) | [gena github](https://github.com/gena) | [jgomezdans github](https://github.com/jgomezdans) - [blog](http://jgomezdans.github.io/) | [Johntruckhenbrodt github](https://github.com/johntruckenbrodt) | [Marcus Netler on github](https://github.com/neteler) | [Oliverhagolle github](https://github.com/olivierhagolle) | [PerryGeo](https://github.com/perrygeo) | [giswqs - Qiusheng Wu github](https://github.com/giswqs) | [rhammell](https://github.com/rhammell) | [Remote pixel github](https://github.com/RemotePixel) | [robintw](https://github.com/robintw) | [Evan Roualt github](https://github.com/rouault) | [samapriya github](https://github.com/samapriya) | [shakasom github](https://github.com/shakasom) | [yannforget github](https://github.com/yannforget) |
+| [Chis Holden](https://github.com/ceholden) | [Christoph Rieke](https://github.com/chrieke) | [gena](https://github.com/gena) | [jgomezdans](https://github.com/jgomezdans) - [blog](http://jgomezdans.github.io/) | [Johntruckhenbrodt](https://github.com/johntruckenbrodt) | [Marcus Netler](https://github.com/neteler) | [Oliverhagolle](https://github.com/olivierhagolle) | [PerryGeo](https://github.com/perrygeo) | [giswqs - Qiusheng Wu](https://github.com/giswqs) | [rhammell](https://github.com/rhammell) | [Remote pixel](https://github.com/RemotePixel) | [robintw](https://github.com/robintw) | [Evan Roualt](https://github.com/rouault) | [samapriya](https://github.com/samapriya) | [shakasom](https://github.com/shakasom) | [yannforget](https://github.com/yannforget) | [Pete Bunting](https://github.com/petebunting) | [Vincent Sarago](https://github.com/vincentsarago) | 
 
 ## EO Geospatial companies or orgs making big contributions
 
